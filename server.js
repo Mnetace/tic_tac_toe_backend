@@ -4,6 +4,11 @@ const Player = require('./utilities/player')
 const Board = require('./utilities/board')
 
 const cors = require('cors')
+const corsOptions = {
+  origin: '*',
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+}
 //set up express server
 const express = require('express')
 const http = require('http')
@@ -15,7 +20,7 @@ const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
 
-app.use(cors())
+app.use(cors(corsOptions))
 
 //Store the room ids mapping to the room property object
 //The room property object looks like this {roomid:str, players:Array(2)}

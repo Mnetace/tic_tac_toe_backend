@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend part for tic-tac-toe application. Designed by Maksim Borodin.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,7 +9,7 @@
     "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maksim Borodin (netace@yandex.ru)",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
